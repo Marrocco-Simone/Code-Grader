@@ -1,0 +1,1 @@
+docker compose -f docker-compose.prod.yml --profile test run --build --rm --entrypoint=npx e2e-playwright playwright test

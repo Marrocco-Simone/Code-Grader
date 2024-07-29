@@ -1,0 +1,10 @@
+# https://k6.io/docs/get-started/installation/
+FROM grafana/k6
+
+WORKDIR /app
+
+COPY . /app
+
+EXPOSE 7800
+
+CMD ["k6", "run", "./submit-assignment-performance.js"]

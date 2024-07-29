@@ -1,0 +1,1 @@
+docker compose -f docker-compose.prod.yml --profile test run --build --rm submit-assignment-test run /app/submit-assignment-performance.js
